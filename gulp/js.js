@@ -44,7 +44,7 @@ gulp.task('js', ['js:base']);
 //   Task: JS Main Base
 // -------------------------------------
 
-gulp.task('js:base', function () {
+gulp.task('js:base', () => {
   return gulp.src(['src/base/js/**/*.js', 'src/components/js/**/*.js'])
     .pipe(plumber({
       errorHandler: function (err) {

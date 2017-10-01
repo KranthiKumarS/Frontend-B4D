@@ -35,7 +35,7 @@ gulp.task('partials', ['partials:base']);
 // // -------------------------------------
 
 
-gulp.task('partials:base', function () {
+gulp.task('partials:base', () => {
     gulp.src(['src/prototypes/*.html'])
     .pipe(htmlPartial({
         basePath: 'src/prototypes/',

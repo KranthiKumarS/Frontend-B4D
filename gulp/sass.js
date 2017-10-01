@@ -46,7 +46,7 @@ gulp.task('sass', ['sass:base', 'sass:components']);
 //   Task: Sass Base
 // -------------------------------------
 
-gulp.task('sass:base', function () {
+gulp.task('sass:base', () => {
   return gulp.src([
     'src/base/scss/base.scss',
   ])
@@ -80,12 +80,12 @@ gulp.task('sass:base', function () {
 //   Task: Sass Components
 // -------------------------------------
 
-gulp.task('sass:components', function () {
+gulp.task('sass:components', () => {
   return gulp.src([
     'src/components/scss/components.scss',
   ])
     .pipe(plumber({
-      errorHandler: function (err) {
+      errorHandler: (err) => {
         notify.onError({
           title: 'Gulp error in ' + err.plugin,
           message: err.toString(),

@@ -28,9 +28,10 @@ var watch = require('gulp-watch');
 //   Task: Watch
 // -------------------------------------
 
-gulp.task('watch', function () {
+gulp.task('watch', () => {
      gulp.watch('src/**/js/**/*.js', ['lint:js', 'js']);
      gulp.watch('src/**/scss/**/*.scss', ['sass', 'copy']);
+     gulp.watch('src/**/less/**/*.less', ['less','copy']);
      gulp.watch('src/**/*.html', ['partials', 'copy']);
 });
 

@@ -41,32 +41,32 @@ gulp.task('copy', ['copy:images', 'copy:fonts', 'copy:vendor']);
 //   Task: Copy
 // -------------------------------------
 
-gulp.task('clean:images', function () {
+gulp.task('clean:images', () => {
   return gulp.src('build/base/images', { read: false })
     .pipe(clean({ force: true }));
 });
 
-gulp.task('copy:images', ['clean:images'], function () {
+gulp.task('copy:images', ['clean:images'], () => {
   return gulp.src('src/base/images/**/*')
     .pipe(gulp.dest('build/base/images'));
 });
 
-gulp.task('clean:fonts', function () {
+gulp.task('clean:fonts', () => {
   return gulp.src('build/base/fonts', { read: false })
     .pipe(clean({ force: true }));
 });
 
-gulp.task('copy:fonts', ['clean:fonts'], function () {
+gulp.task('copy:fonts', ['clean:fonts'], () => {
   return gulp.src('src/base/fonts/**/*')
     .pipe(gulp.dest('build/base/fonts'));
 });
 
-gulp.task('clean:vendor', function () {
+gulp.task('clean:vendor', () => {
   return gulp.src('build/vender', { read: false })
     .pipe(clean({ force: true }));
 });
 
-gulp.task('copy:vendor', ['clean:vendor'], function () {
+gulp.task('copy:vendor', ['clean:vendor'], () => {
   return gulp.src('src/vendor/**/*')
     .pipe(gulp.dest('build/vendor'));
 });

@@ -35,7 +35,7 @@ gulp.task('webserver', ['webserver:base']);
 // // -------------------------------------
 
 
-gulp.task('webserver:base', function () {
+gulp.task('webserver:base', () => {
     gulp.src('build')
     .pipe(webserver({
       livereload: true,

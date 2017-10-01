@@ -35,7 +35,7 @@ gulp.task('directory-map', ['directory-map:base']);
 // // -------------------------------------
 
 
-gulp.task('directory-map:base', function () {
+gulp.task('directory-map:base', () => {
     gulp.src('src/**/*')
   .pipe(directoryMap({
     filename: 'urls.json'

@@ -38,7 +38,7 @@ gulp.task('modernizr', ['modernizr:main']);
 //   Task: Modernizr Main
 // -------------------------------------
 
-gulp.task('modernizr:main', function () {
+gulp.task('modernizr:main', () => {
   return gulp.src([
     'src/**/*.js',
     '!src/**/vendor',

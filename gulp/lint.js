@@ -57,14 +57,14 @@ gulp.task('lint:js', ['lint:js']);
 //   Task: Lint JS
 // -------------------------------------
 
-gulp.task('lint:js', function () {
+gulp.task('lint:js', () => {
   return gulp.src([
     'src/**/*.js',
     '!src/**/vendor/**/*.js',
     '!src/**/compiled/**/*.js',
   ])
     .pipe(plumber({
-      errorHandler: function (err) {
+      errorHandler: (err) => {
         notify.onError({
           title: 'Gulp error in ' + err.plugin,
           message: err.toString(),

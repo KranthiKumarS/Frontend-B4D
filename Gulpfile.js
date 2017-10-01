@@ -37,6 +37,7 @@ gulp.task('build', function () {
     // 'modernizr',
     'js',
     'sass',
+    'less',
     'copy',
     'partials',
     'webserver',
