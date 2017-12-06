@@ -50,7 +50,7 @@ gulp.task('lint', ['lint:js']);
 //   Task: Lint JS
 // -------------------------------------
 
-gulp.task('lint:js', ['lint:js']);
+gulp.task('lint:js', ['lint:js', 'react:lint:js']);
 
 
 // -------------------------------------
@@ -76,4 +76,27 @@ gulp.task('lint:js', () => {
     }))
     .pipe(eslint.format())
     .pipe(gulpIf(isFixed, gulp.dest('src')));
+});
+
+// -------------------------------------
+//   Task: React Lint JS
+// -------------------------------------
+
+gulp.task('react:lint:js', () => {
+  return gulp.src([
+    'src/app/**/*.js'
+  ])
+    .pipe(plumber({
+      errorHandler: (err) => {
+        notify.onError({
+          title: 'Gulp error in ' + err.plugin,
+          message: err.toString(),
+        })(err);
+      },
+    }))
+    .pipe(eslint({
+      'fix': (argv.fix !== undefined),
+    }))
+    .pipe(eslint.format())
+    .pipe(gulpIf(isFixed, gulp.dest('src/app')));
 });

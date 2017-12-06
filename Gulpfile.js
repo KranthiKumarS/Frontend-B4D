@@ -35,6 +35,7 @@ require('require-dir')('./gulp');
 gulp.task('build', function () {
   runSequence(
     // 'modernizr',
+    'react',
     'js',
     'sass',
     'less',
