@@ -1,0 +1,25 @@
+exports.mainNavigation = {
+    navigationLinks : [
+        {title : "Alert", linkurl : "/" },
+        {title : "Badges", linkurl : "/Badges"},
+        {title : "Breadcrumb", linkurl : "/Breadcrumb"},
+        {title : "Buttons", linkurl : "/Buttons"},
+        {title : "Button group", linkurl : "/ButtonGroup"},
+        {title : "Card", linkurl : "/Card"},
+        {title : "Carousel", linkurl : "/Carousel"},
+        {title : "Collapse", linkurl : "/Collapse"},
+        {title : "Dropdowns", linkurl : "/Dropdowns"},
+        {title : "Forms", linkurl : "/Forms"},
+        {title : "Input group", linkurl : "/InputGroup"},
+        {title : "Jumbotron", linkurl : "/Jumbotron"},
+        {title : "List group", linkurl : "/ListGroup"},
+        {title : "Modal", linkurl : "/Modal"},
+        {title : "Navs", linkurl : "/Navs"},
+        {title : "Navbar", linkurl : "/Navbar"},
+        {title : "Pagination", linkurl : "/Pagination"},
+        {title : "Popovers", linkurl : "/Popovers"},
+        {title : "Progress", linkurl : "/Progress"},
+        {title : "Scrollspy", linkurl : "/Scrollspy"},
+        {title : "Tooltips", linkurl : "/Tooltips"},
+    ]
+}

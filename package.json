@@ -55,13 +55,15 @@
     "react-addons-update": "^15.6.2",
     "react-dom": "^0.14.6",
     "react-editable-div": "0.0.4",
+    "react-router-dom": "^4.2.2",
     "require-dir": "^0.3.2",
-    "run-sequence": "^2.1.0",
+    "run-sequence": "^2.2.1",
     "slick-carousel": "^1.7.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.9.0",
-    "yargs": "^8.0.2"
+    "yargs": "^8.0.2",
+    "yarn": "^1.3.2"
   },
   "devDependencies": {
     "gulp-directory-map": "^0.1.3",
